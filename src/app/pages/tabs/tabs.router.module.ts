@@ -1,3 +1,4 @@
+import { MapaPageModule } from './../mapa/mapa.module';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
@@ -24,6 +25,11 @@ const routes: Routes = [
             path: '',
             loadChildren: () =>
               import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+          },
+          {
+            path: 'mapa/:geo',
+            loadChildren: () =>
+              import('../mapa/mapa.module').then(m => m.MapaPageModule)
           }
         ]
       },

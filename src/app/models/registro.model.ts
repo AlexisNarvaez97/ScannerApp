@@ -25,7 +25,7 @@ export class Registro {
         switch (inicioTexto) {
 
             case 'http':
-                this.type = 'HTTP';
+                this.type = 'http';
                 this.icon = 'globe';
             break;
 

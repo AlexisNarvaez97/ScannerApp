@@ -18,20 +18,20 @@ export class Tab1Page {
   // };
 
   ionViewWillEnter () {  // Se dispara cuando la pagina va a cargar pero aun no ha cargado.
-    console.log('ionViewWillEnter');
+    // console.log('ionViewWillEnter');
     this.scan();
   }
 
   ionViewDidEnter () {   // Se dispara cuando la pagina o la vista es cargada. (Totalmente cargada)
-    console.log('ionViewDidEnter');
+    // console.log('ionViewDidEnter');
   }
 
   ionViewWillLeave () {  // Se dispara como una alerta de que se va a ir de la vista.
-    console.log('ionViewWillLeave');
+    // console.log('ionViewWillLeave');
   }
 
   ionViewDidLeave () {  // Se dispara cuando dejas la pagina y entras a otra. 
-    console.log('ionViewDidLeave');
+    // console.log('ionViewDidLeave');
   }
 
   scan() {
@@ -45,9 +45,10 @@ export class Tab1Page {
 
 
      }).catch(err => {
-         console.log('Error', err);
+        //  console.log('Error', err);
 
-         this.datalocal.guardarRegistro('QRCODE','https://www.facebook.com');
+        //  this.datalocal.guardarRegistro('QRCODE','https://www.facebook.com');
+         this.datalocal.guardarRegistro('QRCODE','geo:40.689879098597345,-73.81093397578127');
 
      });
 

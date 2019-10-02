@@ -8,14 +8,20 @@ import { DatalocalService } from '../../services/datalocal.service';
 })
 export class Tab2Page {
 
-  constructor(public dataLocal: DatalocalService) {}
+
+  constructor(public dataLocal: DatalocalService) {
+
+  }
 
   enviarCorreo() {
     console.log('HOLA');
   }
 
-  abrirRegistro() {
-    console.log('registro');
+  abrirRegistro(registro) {
+
+    this.dataLocal.abrirRegistro(registro);
+    console.log(registro);
+    
   }
 
 }
