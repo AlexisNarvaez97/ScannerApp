@@ -14,6 +14,10 @@ import { InAppBrowser } from "@ionic-native/in-app-browser/ngx";
 
 import { IonicStorageModule } from "@ionic/storage";
 
+import { EmailComposer } from '@ionic-native/email-composer/ngx';
+
+import { File } from '@ionic-native/file/ngx';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -27,6 +31,8 @@ import { IonicStorageModule } from "@ionic/storage";
     StatusBar,
     BarcodeScanner,
     InAppBrowser,
+    EmailComposer,
+    File,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],

@@ -17,3 +17,12 @@
   border-radius: 3px;
   display: none;
 }
+
+.boton-regresar {
+  position: fixed;
+  bottom: 620px;
+  // top: 40px;
+  right: 5px;
+  // color: #7044ff;
+  --icon-font-size: 28px !important;
+}

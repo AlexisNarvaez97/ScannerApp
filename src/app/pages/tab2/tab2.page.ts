@@ -14,7 +14,8 @@ export class Tab2Page {
   }
 
   enviarCorreo() {
-    console.log('HOLA');
+    // console.log('HOLA');
+    this.dataLocal.enviarCorreo();
   }
 
   abrirRegistro(registro) {
